@@ -12,16 +12,25 @@
   </head>
   <body>
     <main class="container">
-      <section class="card">
-        <div class="gallery" style="width: 25%; margin: auto">
-          <figure>
-            <img src="./assets/img/note-app-icon.png" alt="アプリアイコン" />
-          </figure>
+      <section class="card hero">
+        <div class="hero-media">
+          <img src="./assets/img/note-app-icon.png" alt="積みメモのアプリアイコン" />
+        </div>
+        <div class="hero-content">
+          <span class="app-label">積み上げを応援するメモアプリ</span>
+          <h1>積みメモ</h1>
+          <p class="lead">
+            毎日のメモを習慣化し、積み上げを可視化することで継続をサポートします。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="../index.html">アプリ一覧に戻る</a>
+            <a class="button" href="#privacy">プライバシーポリシーを見る</a>
+          </div>
         </div>
       </section>
 
-      <section class="card">
-        <h1>アプリ概要</h1>
+      <section class="card" id="overview">
+        <h2>アプリ概要</h2>
         <p class="notice">下の画面イメージはスクリーンショットです。</p>
         <div class="gallery">
           <figure>
@@ -52,33 +61,38 @@
       </section>
 
       <section class="card">
-        <h2>使用方法</h2>
-        <h3>カレンダー</h3>
-        <p>
-          メモを追加すると、カレンダーの色が変わります。<br />メモの数が多いほど色が濃くなります。
-        </p>
-        <h3>メモ一覧画面</h3>
-        <p>メモ一覧画面で登録されたメモの一覧が確認できます。</p>
-        <p>
-          登録されたメモをタップすると編集することができ、削除ボタンで削除できます。
-        </p>
-        <p>新規ボタンで新規メモ追加画面に移動します。</p>
-        <h3>新規追加画面</h3>
-        <p>タイトル（任意）とメモ内容を入力し、保存ボタンで保存できます。</p>
-        <h3>メモの削除</h3>
-        <p>
-          削除ボタンをタップすると確認ダイアログが表示されるので、削除する場合は「削除」を選択して下さい。
-        </p>
+        <h2>主な機能と使い方</h2>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>カレンダー</h3>
+            <p>メモを追加するとカレンダーの色が変わり、メモの数が多いほど色が濃くなります。</p>
+          </article>
+          <article class="feature">
+            <h3>メモ一覧画面</h3>
+            <p>登録されたメモの一覧を確認できます。メモをタップすると編集でき、削除ボタンから削除することも可能です。</p>
+          </article>
+          <article class="feature">
+            <h3>新規追加画面</h3>
+            <p>タイトル（任意）とメモ内容を入力し、保存ボタンで簡単にメモを追加できます。</p>
+          </article>
+          <article class="feature">
+            <h3>メモの削除</h3>
+            <p>削除ボタンをタップすると確認ダイアログが表示され、削除を選択するとメモが削除されます。</p>
+          </article>
+        </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="privacy">
         <h2>プライバシーポリシー</h2>
-        <p><a href="./privacy/index.html">Privacy Policy</a></p>
+        <p>データの取り扱いについては下記のページで詳しくご案内しています。</p>
+        <a class="button" href="./privacy/index.html">Privacy Policy を読む</a>
       </section>
 
-      <section class="card">
+      <section class="card card--compact">
         <h2>Contact</h2>
-        <p>e-mail : hika.develop.sup@gmail.com</p>
+        <p>
+          ご質問やお問い合わせは hika.develop.sup@gmail.com までお気軽にご連絡ください。
+        </p>
       </section>
 
       <footer class="footer">
